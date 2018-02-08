@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "./assets/css/template/skins/_all-skins.min.css";
+
+@import "./assets/css/template/AdminLTE.css";
+
+.wrapper{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+menu{
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.mat-raised-button{
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.mat-raised-button:hover{
+  opacity: 0.5;
+}
+
+.content{
+    min-height: 100%;
+    min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    min-height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+}
