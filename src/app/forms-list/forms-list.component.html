@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-4">
-      <button mat-raised-button color="primary">Ajouter</button>
+      <button mat-raised-button color="primary" routerLink="/forms/up">Ajouter</button>
     </div>
 </div>
 <div class="row">
@@ -19,7 +19,7 @@
          <mat-header-cell *matHeaderCellDef > Actions </mat-header-cell>
          <mat-cell *matCellDef="let element">
 
-           <button mat-raised-button color="yellow"   (click)="update(element.id)" > Modifier</button>
+           <button mat-raised-button color="yellow"   routerLink="/forms/up/{{element.id}}" > Modifier</button>
            <button mat-raised-button color="warn"   (click)="openDialog(element.id)" >  Effacer</button>
 
           </mat-cell>

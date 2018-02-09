@@ -16,6 +16,7 @@ export class Route {
   {path:"users/up/:id", component:UsersComponent,data: { page: -1 }},
   {path:"forms", component:FormsListComponent,data: { page: -2}},
   {path:"forms/up", component:FormsUpComponent,data: { page: -2 }},
+  {path:"forms/up/:id", component:FormsUpComponent,data: { page: -2 }},
   {path:"form-type/:id", component:FormTypeListComponent,data: { page:-3}}
   ];
 
