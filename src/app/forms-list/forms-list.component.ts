@@ -16,7 +16,7 @@ import {ConfirmDialogComponent} from '../confirm-dialog/confirm-dialog.component
   selector: 'app-forms-list',
   templateUrl: './forms-list.component.html',
   styleUrls: ['./forms-list.component.css'],
-  
+
 })
 export class FormsListComponent implements OnInit {
 

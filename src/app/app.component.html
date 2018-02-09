@@ -4,6 +4,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div [ngClass]="{'sidebar-collapse':open}"  class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+
 <menu [triggerFn]="triggerMenu"  [activeLink]="activeLink"></menu>
   <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -20,7 +21,6 @@
       </ol>
     </section>
 
-
   <section class="content">
       <router-outlet (activate)='getPage(appOutlet)' #appOutlet="outlet"></router-outlet>
   </section>
@@ -28,6 +28,5 @@
 </div>
 <footer class="main-footer">
   <strong>Copyright &copy; 2018 <a href="">Exteam</a>.</strong> All rights
-  reserved.
 </footer>
 </div>
