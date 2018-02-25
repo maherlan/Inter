@@ -33,7 +33,7 @@ defaultOptions =
     let options=[...this.defaultOptions,...this.customOptions];
 console.log(options);
     this.options={
-      toolbarButtons:options;
+      toolbarButtons:options
     }
 
    }
