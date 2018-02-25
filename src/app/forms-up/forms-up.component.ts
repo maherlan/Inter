@@ -31,9 +31,9 @@ defaultOptions =
 
   constructor() {
     let options=[...this.defaultOptions,...this.customOptions];
-console.log(options);
     this.options={
-      toolbarButtons:options
+      toolbarButtons:options,
+	  height: 300
     }
 
    }
@@ -46,8 +46,7 @@ console.log(options);
       title: 'Saisie libre',
       focus: false,
       undo: true,
-      refreshAfterCallback: true,
-
+      refreshAfterCallback: true,	
       callback: function () {
         this.html.insert('<input type="text">');
         this.undo.saveStep();

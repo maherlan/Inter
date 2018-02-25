@@ -1,3 +1,123 @@
+<form>
+<div class="row">
+	<div class="col-md-6">
+		<label for="title"> Titre du formulaire: </label>
+		<input type="text" placeholder="Titre" class="form-control"/> 
+	</div>
+	
+	<div class="col-md-6">
+		<label for="cb"> Cible: </label>
+		<select name="cb" class="form-control">
+			<option>Choisir</option>	
+			<option>Group1</option>	
+			<option>Group2</option>	
+			<option>Group3</option>
+		</select>
+	</div>
+	
+	<div class="col-md-6">
+		<label for="dc"> Déclencheur: </label>
+		<input type="text" placeholder="1a/3m/30j" class="form-control"/> 
+	</div>
+	
+	<div class="col-md-6">
+		<label for="cb"> Déclencher selon: </label>
+		<select name="cb" class="form-control">
+			<option>Choisir</option>
+			<option>Date inscription cible</option>	
+			<option>Date creation formulaire </option>	
+			
+		</select>
+	</div>
+	
+	<div class="col-md-12">
+		<div class="col-md-3">
+			<label for="title"> Exportation: </label>
+		</div>
+		
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">PDF</label>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Email</label>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="col-md-12">
+		<div class="col-md-3">
+			<label for="title"> Group1: </label>
+		</div>
+		
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Voir Liste</label>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Lecture</label>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Modification</label>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="col-md-12">
+		<div class="col-md-3">
+			<label for="title"> Group2: </label>
+		</div>
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Voir Liste</label>
+			</div>
+		</div>
+		
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Lecture</label>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" />
+				<label class="form-check-label">Modification</label>
+			</div>	
+		</div>
+	</div>
+	
+	
+</div>
 
+<div class="row">	
+	<div class="col-md-12">
+		<div [froalaEditor]="options" >
+			...
+		
+		</div>
+	</div>
+</div>
 
-<div [froalaEditor]="options"></div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-9">
+		 <button mat-raised-button color="success"> Enregister</button>
+         <button mat-raised-button color="warn"> Annuler</button>
+	</div>
+</div>
+</form>
